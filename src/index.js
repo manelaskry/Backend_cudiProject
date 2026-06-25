@@ -1,4 +1,4 @@
-require('dotenv').config(); // ← TOUT EN HAUT, avant tout le reste
+require('dotenv').config(); 
 
 const express = require('express');
 const cors = require('cors');
@@ -14,7 +14,7 @@ const app = express();
 
 app.use(cors({
   origin: 'http://localhost:3000',
-  credentials: true  // ← obligatoire pour les cookies
+  credentials: true 
 }));
 app.use(cookieParser());
 app.use(express.json({ limit: '10mb' }));
